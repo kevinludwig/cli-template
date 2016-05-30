@@ -1,5 +1,5 @@
 (ns com.example.config 
-    (:require [clj-config :as config]))
+    (:require [clj-config.core :as config]))
 
 (defn get-key
     ([k] (config/get-key "./config/default.clj" k))

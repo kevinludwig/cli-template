@@ -18,6 +18,7 @@
         [clj-config "0.2.0"]
     ]
     :profiles {
+        :uberjar {:aot :all}
         :dev {:plugins [
             [lein-ancient "0.6.3"]
             [lein-kibit "0.1.2"]

@@ -3,8 +3,8 @@
         [compojure.core :refer [defroutes GET]]
         [compojure.route :as route]
         [com.example.controllers.xml :as xml]
-        [com.example.controllers.notfound :as notfound))
+        [com.example.controllers.notfound :as notfound]))
 
 (defroutes main-routes
-    (GET "/xml/:node" [node] (xml node))
-    (route/not-found (notfound)))
+    (GET "/xml/:node" [node] (xml/xml node))
+    (route/not-found (notfound/notfound)))
