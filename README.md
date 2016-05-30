@@ -11,12 +11,12 @@ Fire it up: `ring server-headless 3000`
 
 ### Plugin usage
 
-Run tests: `lein midje`
-View coverage `lein cloverage`
-Lint files: `lein eastwood`
-Beautify: `lein cljfmt check` (or `lein cljfmt fix`)
-Check for outdated dependencies: `lein ancient`
-Check for code simplifications: `lein kibit`
+* Run tests: `lein midje`
+* View coverage `lein cloverage`
+* Lint files: `lein eastwood`
+* Beautify: `lein cljfmt check` (or `lein cljfmt fix`)
+* Check for outdated dependencies: `lein ancient`
+* Check for code simplifications: `lein kibit`
 
 ### Docker
 
