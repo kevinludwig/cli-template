@@ -2,7 +2,7 @@
     :description "basic clj project"
     :plugins [[lein-ring "0.7.3"]]
     :ring {:handler com.example.app/app}
-    :main com.example.app/start-server
+    :main com.example.app
     :dependencies [
         [org.clojure/clojure "1.8.0"]
         [compojure "1.5.0"]

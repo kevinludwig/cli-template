@@ -5,7 +5,8 @@
         [com.example.config :as config]
         [com.example.routes :as routes]
         [taoensso.timbre :as log]
-        [ring.middleware.json :as middleware]))
+        [ring.middleware.json :as middleware])
+    (:gen-class))
 
 (def app 
     (-> routes/main-routes
@@ -16,3 +17,5 @@
 (defn start-server []
     (let [opts {:port (config/get-key :port)}]
         (run-jetty app opts)))
+
+(defn -main [& args] (start-server))
